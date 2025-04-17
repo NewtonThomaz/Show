@@ -60,7 +60,7 @@ public class ShowController {
 	public ResponseEntity<String> criarShow(@PathVariable Long id) {
 		boolean deleted = showService.deleteShow(id);
 		if (deleted) {
-			return ResponseEntity.ok().body("Pet excluido com sucesso!!!");
+			return ResponseEntity.ok().body("Show excluido com sucesso!!!");
 		} else {
 			return ResponseEntity.notFound().build();
 		}
